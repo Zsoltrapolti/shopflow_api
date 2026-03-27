@@ -9,12 +9,7 @@ import org.springframework.security.config.annotation.web.configurers.AbstractHt
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
 
-/**
- * Security configuration — stateless REST API.
- *
- * <p>Public read access to products; write operations and all order
- * endpoints require authentication. Designed for JWT extension.
- */
+
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {

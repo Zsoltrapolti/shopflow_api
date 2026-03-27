@@ -11,12 +11,7 @@ import org.springframework.data.domain.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
-/**
- * Order REST controller.
- *
- * <p>Exposes order lifecycle endpoints. Status transitions are validated
- * in the service layer via explicit state-machine logic.
- */
+
 @RestController
 @RequestMapping("/api/v1/orders")
 @RequiredArgsConstructor

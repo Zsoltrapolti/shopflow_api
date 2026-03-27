@@ -14,9 +14,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 @DisplayName("Discount Strategy Pattern")
 class DiscountStrategyTest {
 
-    /**
-     * Verify that the Factory selects the correct Strategy based on order total.
-     */
+
     @Test
     @DisplayName("should apply loyalty discount for orders over $200")
     void shouldApplyLoyaltyDiscountForLargeOrders() {

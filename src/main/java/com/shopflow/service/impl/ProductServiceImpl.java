@@ -13,12 +13,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-/**
- * Product service implementation.
- *
- * <p>Single Responsibility: handles only product business logic.
- * All DB access is delegated to the repository layer.
- */
+
 @Slf4j
 @Service
 @RequiredArgsConstructor

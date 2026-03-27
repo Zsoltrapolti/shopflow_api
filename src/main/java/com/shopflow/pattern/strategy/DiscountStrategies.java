@@ -6,11 +6,8 @@ import org.springframework.stereotype.Component;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-/**
- * Concrete Strategies — Discount Implementations
- */
 
-// ── No discount ──────────────────────────────────────────────────────────────
+
 @Component("noDiscount")
 class NoDiscountStrategy implements DiscountStrategy {
 
@@ -25,7 +22,6 @@ class NoDiscountStrategy implements DiscountStrategy {
     }
 }
 
-// ── Percentage off ────────────────────────────────────────────────────────────
 @Component("percentageDiscount")
 class PercentageDiscountStrategy implements DiscountStrategy {
 
@@ -44,7 +40,6 @@ class PercentageDiscountStrategy implements DiscountStrategy {
     }
 }
 
-// ── Loyalty discount (orders over $200 get 15% off) ──────────────────────────
 @Component("loyaltyDiscount")
 class LoyaltyDiscountStrategy implements DiscountStrategy {
 

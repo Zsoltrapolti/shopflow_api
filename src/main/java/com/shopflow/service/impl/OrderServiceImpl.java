@@ -26,17 +26,6 @@ import java.util.List;
 import java.util.Set;
 import java.util.EnumSet;
 
-/**
- * Order service implementation.
- *
- * <p>Orchestrates:
- * <ul>
- *   <li>Stock validation and deduction</li>
- *   <li>Total calculation with Strategy-pattern discounts</li>
- *   <li>Observer notification on state changes</li>
- *   <li>Valid order state transitions</li>
- * </ul>
- */
 @Slf4j
 @Service
 @RequiredArgsConstructor
@@ -139,7 +128,6 @@ public class OrderServiceImpl implements OrderService {
         log.info("Cancelled order #{}", id);
     }
 
-    // ── Private helpers ───────────────────────────────────────────────────────
 
     private OrderItem buildOrderItem(Order order, com.shopflow.model.dto.OrderItemDto.Request req) {
         Product product = productRepository.findById(req.getProductId())

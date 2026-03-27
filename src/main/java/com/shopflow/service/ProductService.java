@@ -5,12 +5,7 @@ import com.shopflow.model.entity.Product;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
-/**
- * Product service contract.
- *
- * <p>Interface Segregation: this interface exposes only product-related operations.
- * Dependency Inversion: controllers depend on this abstraction, not the implementation.
- */
+
 public interface ProductService {
 
     ProductDto.Response createProduct(ProductDto.Request request);

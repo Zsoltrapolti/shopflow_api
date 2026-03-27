@@ -12,12 +12,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-/**
- * Product REST controller.
- *
- * <p>Thin layer — delegates all logic to {@link ProductService}.
- * Handles only HTTP concerns: routing, status codes, request binding.
- */
+
 @RestController
 @RequestMapping("/api/v1/products")
 @RequiredArgsConstructor

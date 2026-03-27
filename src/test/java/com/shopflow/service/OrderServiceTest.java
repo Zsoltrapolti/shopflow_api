@@ -200,7 +200,6 @@ class OrderServiceTest {
         }
     }
 
-    // ── Helpers ───────────────────────────────────────────────────────────────
 
     private Order buildOrder(Long id, Order.OrderStatus status) {
         Order order = new Order();

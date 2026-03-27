@@ -8,15 +8,7 @@ import org.springframework.stereotype.Component;
 import java.math.BigDecimal;
 import java.util.Map;
 
-/**
- * Factory Pattern — Discount Strategy Factory
- *
- * <p>Implements the Factory (GoF) pattern to select and return the
- * appropriate {@link DiscountStrategy} based on order context.
- *
- * <p>Combines with the Strategy Pattern to demonstrate how patterns
- * compose cleanly in real systems.
- */
+
 @Component
 @RequiredArgsConstructor
 public class DiscountStrategyFactory {

@@ -5,11 +5,7 @@ import com.shopflow.model.entity.OrderItem;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
-/**
- * Concrete Observer — Inventory Tracking
- *
- * <p>Monitors stock levels and triggers low-stock alerts.
- */
+
 @Slf4j
 @Component
 public class InventoryTrackingListener implements OrderEventListener {

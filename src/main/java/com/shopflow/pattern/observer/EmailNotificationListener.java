@@ -4,12 +4,7 @@ import com.shopflow.model.entity.Order;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
-/**
- * Concrete Observer — Email Notifications
- *
- * <p>Sends email notifications on order events.
- * In production, this would integrate with SendGrid / AWS SES.
- */
+
 @Slf4j
 @Component
 public class EmailNotificationListener implements OrderEventListener {

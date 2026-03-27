@@ -12,13 +12,7 @@ import org.springframework.context.annotation.Profile;
 import java.math.BigDecimal;
 import java.util.List;
 
-/**
- * Development data seeder.
- *
- * <p>Only runs when the {@code dev} or {@code default} profile is active.
- * Uses the repository directly (not the service) to avoid triggering
- * business-layer validation on seed data.
- */
+
 @Slf4j
 @Configuration
 @RequiredArgsConstructor
